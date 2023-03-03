@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def home_page() -> str:
     print("Inside home")
-    return "Hello from KindleSpark Team on the landing page v.0.0.1!"
+    return "Hello from KindleSpark Team on the landing page v.0.0.2!"
 
 @app.route("/shop")
 def shop_page() -> str:
