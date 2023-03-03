@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: step 1
       run: echo Hello from KindleSpark workflow
-    - name: step 2
-      run: |
-        echo workflow 0.0.1v
-        echo test, and deploy your project.
+    - name: Login to Heroku Container registry
+      env: 
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:login 
