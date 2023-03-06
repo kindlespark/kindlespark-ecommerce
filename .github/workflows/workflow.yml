@@ -10,7 +10,7 @@ jobs:
       - name: Updating Ubuntu system and Heroku
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: sudo apt update && sudo snap install --classic heroku
+        run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
       - name: step 1
         run: echo Hello from KindleSpark workflow
       - name: Deploy to Heroku
