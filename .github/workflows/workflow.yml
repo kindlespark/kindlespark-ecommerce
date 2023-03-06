@@ -10,9 +10,7 @@ jobs:
       - name: Updating Ubuntu system and Heroku
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: sudo apt update && sudo snap install heroku neofetch
-      - name: Checking the info
-        run: neofetch
+        run: sudo apt update && sudo snap install heroku
       - name: step 1
         run: echo Hello from KindleSpark workflow
       - name: Deploy to Heroku
