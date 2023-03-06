@@ -4,22 +4,17 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-20.04
-
     steps:
     - uses: actions/checkout@v2
     - name: Updating Ubuntu system and Heroku
         env: 
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: sudo apt update && sudo apt install heroku neofetch
-
     - name: Checking the info
         run: neofetch
-        
     - name: step 1
       run: echo Hello from KindleSpark workflow
-      
     - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.8.8
         with:
