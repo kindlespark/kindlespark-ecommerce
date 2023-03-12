@@ -21,3 +21,8 @@ def toaster_page() -> str:
 def toaster_page() -> str:
     print("Method added by Rahul Sanyasi")
     return "Hello from Rahul Sanyasi the landing page v.0.0.1!"
+
+@app.route("/mixer")
+def mixer_page() -> str:
+    print("Method added by Kiran Bhamare")
+    return "Hello from Kiran the landing page v.0.0.1!"
