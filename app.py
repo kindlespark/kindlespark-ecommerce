@@ -15,4 +15,4 @@ def shop_page() -> str:
 @app.route("/toaster")
 def toaster_page() -> str:
     print("Method added by Ashwini Shimpi")
-    return "Hello from Ashwini the landing page v.0.0.1!"
+    return "Hello from Kindlespark the landing page v.0.0.1!"
