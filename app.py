@@ -16,3 +16,8 @@ def shop_page() -> str:
 def toaster_page() -> str:
     print("Method added by Ashwini Shimpi")
     return "Hello from Kindlespark the landing page v.0.0.1!"
+
+@app.route("/modem")
+def toaster_page() -> str:
+    print("Method added by Rahul Sanyasi")
+    return "Hello from Rahul Sanyasi the landing page v.0.0.1!"
