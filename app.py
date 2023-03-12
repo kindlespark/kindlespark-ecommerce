@@ -18,9 +18,9 @@ def toaster_page() -> str:
     return "Hello from Kindlespark the landing page v.0.0.1!"
 
 @app.route("/modem")
-def toaster_page() -> str:
+def modem_page() -> str:
     print("Method added by Rahul Sanyasi")
-    return "Hello from Rahul Sanyasi the landing page v.0.0.1!"
+    return "Hello from Rahul Sanyasi the landing page v.0.0.2!"
 
 @app.route("/mixer")
 def mixer_page() -> str:
