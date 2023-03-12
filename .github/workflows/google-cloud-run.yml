@@ -48,11 +48,11 @@ name: Deploy to Cloud Run from Source
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 env:
   PROJECT_ID: spry-bricolage-343802 # TODO: update Google Cloud project id
-  SERVICE: myworld # TODO: update Cloud Run service name
+  SERVICE: kindlesparkecomm # TODO: update Cloud Run service name
   REGION: me-west1 # TODO: update Cloud Run service region
 
 jobs:
