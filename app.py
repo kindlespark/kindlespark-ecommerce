@@ -10,7 +10,7 @@ def home_page() -> str:
 @app.route("/shop")
 def shop_page() -> str:
     print("Method added by Rakesh Jagtap")
-    return "Hello from Rakesh the landing page v.0.0.1!"
+    return "Hello from Kindle spark Rakesh the landing page v.0.0.2!"
 
 @app.route("/toaster")
 def toaster_page() -> str:
