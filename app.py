@@ -26,3 +26,8 @@ def modem_page() -> str:
 def mixer_page() -> str:
     print("Method added by Kiran Bhamare")
     return "Hello from Kiran the landing page v.0.0.1!"
+
+@app.route("/bike")
+def bike_page() -> str:
+    print("Method added by Aniruddha Bhamare")
+    return "Hello from Aniruddha the landing page v.0.0.1!"
