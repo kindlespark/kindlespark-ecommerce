@@ -31,3 +31,8 @@ def mixer_page() -> str:
 def bike_page() -> str:
     print("Method added by Aniruddha Bhamare")
     return "Hello from Aniruddha the landing page v.0.0.1!"
+
+@app.route("/stove")
+def stove_page() -> str:
+    print("Method added by Ananta Sonawane")
+    return "Hello from Ananta-kindlespark the landing page v.0.0.2!"
